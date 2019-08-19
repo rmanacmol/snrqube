@@ -1,0 +1,22 @@
+https://docs.sonarqube.org/display/PLUG/SonarJava
+
+
+
+For Gradle projects, declare the org.sonarqube plugin in your build.gradle file:
+
+plugins {
+    id "org.sonarqube" version "2.5"
+}
+Then use the SonarQube Scanner for Gradle by executing the following command from the root directory of the project:
+
+./gradlew sonarqube -Dsonar.host.url=[your SonarQube URL]
+
+./gradlew sonarqube -Dsonar.host.url=http://localhost:9000
+
+
+
+
+For Kotlin
+-------
+
+sonar-scanner
